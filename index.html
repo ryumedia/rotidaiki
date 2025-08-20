@@ -130,28 +130,19 @@
                     <h3 class="text-xl font-semibold text-gray-700 mb-4">Pilih Produk</h3>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Product 1 - PROMO MERDEKA -->
-                        <div class="product-card relative">
-                            <div class="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 rounded-full text-xs font-bold z-10">
-                                🇮🇩 PROMO MERDEKA
-                            </div>
-                            <div class="absolute top-2 right-2 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-medium z-10">
-                                <div class="text-center">
-                                    <div class="text-xs">Promo berakhir dalam:</div>
-                                    <div id="countdown-paket" class="font-bold text-xs">--:--:--</div>
-                                </div>
-                            </div>
+                        <!-- Product 1 -->
+                        <div class="product-card">
                             <div class="h-48 overflow-hidden">
                                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwV-5S501c6CUOuCaS-uiCZxpjzrjCiJZY-tQ2gOStjdXHMbDexUgJhpCOQ1uMLQkLbkw9In8n95Yi_wOGyCQ2jOlHbtb8oslRv_xWxMxK7wdL1kqwfyKnALSfMQLjs8Iv6y6_b7GydQ14HZvktQ6Hj59wAhuu0TSEZotlRzI1uqR2o39u0vPFYsp-t20/s600/Gambar%20produk.png" alt="Paket Happiness" class="product-image">
                             </div>
                             <div class="p-4">
                                 <h4 class="font-semibold text-lg mb-1">Paket Happiness</h4>
-                                <p class="text-gray-500 text-sm mb-3">Paket spesial kemerdekaan dengan berbagai varian roti</p>
+                                <p class="text-gray-500 text-sm mb-3">Paket spesial dengan berbagai varian roti</p>
                                 <div class="flex justify-between items-center">
-                                    <p class="font-bold text-gray-800">Rp 27.500</p>
+                                    <p class="font-bold text-gray-800">Rp 28.000</p>
                                     <div class="flex items-center">
                                         <span class="quantity-btn minus" data-product="paket-happiness">-</span>
-                                        <input type="number" min="0" value="0" class="w-12 text-center mx-2 input-style py-1 px-0 product-quantity" data-product="paket-happiness" data-price="27500">
+                                        <input type="number" min="0" value="0" class="w-12 text-center mx-2 input-style py-1 px-0 product-quantity" data-product="paket-happiness" data-price="28000">
                                         <span class="quantity-btn plus" data-product="paket-happiness">+</span>
                                     </div>
                                 </div>
@@ -330,6 +321,25 @@
                                             <input type="number" min="0" value="0" class="w-12 text-center mx-2 input-style py-1 px-0 product-quantity" data-product="roti-sosis-keju-jumbo" data-price="22000">
                                             <span class="quantity-btn plus" data-product="roti-sosis-keju-jumbo">+</span>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 8 - NEW -->
+                        <div class="product-card">
+                            <div class="h-48 overflow-hidden">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2fO_kiU3i1QCvwUyFpe1FXM1LgVa6cZF-agjn_-knVlQmfqINtlaNKdtNDmo7Ri8Ows3UwxH8rh9xVk4WFTAue2KVClHDRDNiA3ZHXY5oEsSvfcVjrhqO5a7aLSNboqJUpi3o1oyLTZRlGrHuDUcnR3GlVBsisuiK6rW18Cn7ovp2PiJJlX_XE2GZu54/s600/roti%20tawar%20gandum.png" alt="Roti Tawar Gandum" class="product-image">
+                            </div>
+                            <div class="p-4">
+                                <h4 class="font-semibold text-lg mb-1">Roti Tawar Gandum</h4>
+                                <p class="text-gray-500 text-sm mb-3">Roti tawar kaya akan gandum, dan bahan-bahan premium dicampur dengan Madu sebagai pemanis alami</p>
+                                <div class="flex justify-between items-center">
+                                    <p class="font-bold text-gray-800">Rp 50.000</p>
+                                    <div class="flex items-center">
+                                        <span class="quantity-btn minus" data-product="roti-tawar-gandum">-</span>
+                                        <input type="number" min="0" value="0" class="w-12 text-center mx-2 input-style py-1 px-0 product-quantity" data-product="roti-tawar-gandum" data-price="50000">
+                                        <span class="quantity-btn plus" data-product="roti-tawar-gandum">+</span>
                                     </div>
                                 </div>
                             </div>
@@ -556,7 +566,7 @@
             
             // Product names mapping - UPDATED with new products
             const productNames = {
-                'paket-happiness': 'Paket Happiness (Promo Merdeka)',
+                'paket-happiness': 'Paket Happiness',
                 'cranberry-cheese': 'Cranberry Cheese',
                 'double-choco': 'Double Choco',
                 'mini-cranberry': 'Mini Cranberry (isi 10)',
@@ -565,7 +575,8 @@
                 'banana-cream-cheese-small': 'Banana Cream Cheese (Reguler)',
                 'banana-cream-cheese-jumbo': 'Banana Cream Cheese (Jumbo)',
                 'roti-sosis-keju-small': 'Roti Sosis Keju (Reguler)',
-                'roti-sosis-keju-jumbo': 'Roti Sosis Keju (Jumbo)'
+                'roti-sosis-keju-jumbo': 'Roti Sosis Keju (Jumbo)',
+                'roti-tawar-gandum': 'Roti Tawar Gandum'
             };
             
             // Format currency
@@ -581,7 +592,6 @@
                 if (timeLeft <= 0) {
                     // Promo expired
                     isPromoExpired = true;
-                    document.getElementById('countdown-paket').textContent = 'BERAKHIR';
                     document.getElementById('countdown-promo').textContent = 'BERAKHIR';
                     
                     // Disable promo section
@@ -619,7 +629,6 @@
                     countdownText = `${minutes}:${seconds.toString().padStart(2, '0')}`;
                 }
                 
-                document.getElementById('countdown-paket').textContent = countdownText;
                 document.getElementById('countdown-promo').textContent = countdownText;
             }
             
@@ -902,5 +911,5 @@
             updateOrderSummary();
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96f3dda2f22dafeb',t:'MTc1NTIxMDMwMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'972305e0b1ca9509',t:'MTc1NTcwNDc4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
